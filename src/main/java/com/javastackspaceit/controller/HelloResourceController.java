@@ -38,4 +38,8 @@ public class HelloResourceController {
 
 	}
 
+ @DeleteMapping(value = "/delete")
+	public String delete() {
+		return " delete method";
+	}
 }
