@@ -42,4 +42,6 @@ public class HelloResourceController {
 	public String delete() {
 		return " delete method";
 	}
+	
+	public String add() {}
 }
