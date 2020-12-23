@@ -18,6 +18,7 @@ public class HelloResourceController {
 	AuthenticationManager authenticationManager;
 	@Autowired
 	private JwtUtil jwtUtil;
+	private String reakeshTestUser="rakesh made changes";
 
 	@GetMapping(value = "/")
 	public String hello() {
