@@ -8,10 +8,8 @@ import com.javastackspaceit.repository.UserRepository;
 
 @SpringBootApplication
 public class SpringBootJwtApplication {
-
 	@Autowired
 	UserRepository userRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootJwtApplication.class, args);
 	}
