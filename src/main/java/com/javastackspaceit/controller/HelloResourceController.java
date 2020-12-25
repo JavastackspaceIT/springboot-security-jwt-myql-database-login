@@ -19,7 +19,7 @@ public class HelloResourceController {
 	@Autowired
 	private JwtUtil jwtUtil;
 	private String reakeshTestUser="rakesh made changes";
-
+	private String rajeshStringTest="rajesh";
 	@GetMapping(value = "/")
 	public String hello() {
 
