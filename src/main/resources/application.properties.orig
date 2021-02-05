@@ -7,8 +7,10 @@ spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 
 jwt.secret=jwtToken
+<<<<<<< HEAD
+=======
 
 #server.ssl.enabled=true
 #server.ssl.key-store=ssl_server.jks
 #server.ssl.key-password=stackspaceit
-
+>>>>>>> added spring security

@@ -13,7 +13,10 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+<<<<<<< HEAD
+=======
 import com.javastackspaceit.exception.JwtTokenExpireException;
+>>>>>>> added spring security
 import com.javastackspaceit.security.config.filter.JwtTokenFilter;
 
 @EnableWebSecurity
@@ -33,6 +36,11 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
+<<<<<<< HEAD
+		http.csrf().disable().authorizeRequests().antMatchers("/authenticate").permitAll().anyRequest().authenticated()
+				.and().exceptionHandling().and().sessionManagement()
+				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+=======
 		http.csrf().disable();
 		http.authorizeRequests().antMatchers("/authenticate").permitAll();
 		http.authorizeRequests().antMatchers("/user/*").permitAll();
@@ -41,12 +49,17 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		//.exceptionHandling(exceptionHandlingCustomizer)
 		
 		.exceptionHandling().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+>>>>>>> added spring security
 		http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
 	}
 
 	@Bean
 	@Override
 	public AuthenticationManager authenticationManagerBean() throws Exception {
+<<<<<<< HEAD
+		// TODO Auto-generated method stub
+=======
+>>>>>>> added spring security
 		return super.authenticationManagerBean();
 	}
 

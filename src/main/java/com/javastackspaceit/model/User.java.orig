@@ -14,7 +14,13 @@ import javax.persistence.Table;
 @Table(name = "user_credentail_tbl")
 public class User implements Serializable {
 
+<<<<<<< HEAD
+=======
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
+>>>>>>> added spring security
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
