@@ -13,7 +13,6 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.javastackspaceit.exception.JwtTokenExpireException;
 import com.javastackspaceit.security.config.filter.JwtTokenFilter;
 
 @EnableWebSecurity
